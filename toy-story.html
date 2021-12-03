@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toy Story - Teste Tag Manager</title>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-N45MV9G");
+    </script>
+    <!-- End Google Tag Manager -->
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-N45MV9G"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <section id="bemvindo">
+      <h1 style="color: blue">Toy Story</h1>
+    </section>
+    <section id="principal" style="display: flex">
+      <div class="conteudo">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/pt/a/a7/Toy_Story_1995.jpg"
+        />
+        <p style="padding: 10px">
+          O aniversário do garoto Andy está chegando e seus brinquedos ficam
+          nervosos, temendo que ele ganhe novos brinquedos que possam
+          substituí-los. Liderados pelo caubói Woody, o brinquedo predileto de
+          Andy, eles recebem Buzz Lightyear, o boneco de um patrulheiro
+          espacial, que logo passa a receber mais atenção do garoto. Com ciúmes,
+          Woody tenta ensiná-lo uma lição, mas Buzz cai pela janela. É o início
+          da aventura do caubói, que precisa resgatar Buzz para limpar sua barra
+          com os outros brinquedos.
+        </p>
+      </div>
+    </section>
+    <style>
+      .conteudo {
+        display: flex;
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+        border: grey 1px solid;
+        border-radius: 10px;
+        max-width: 500px;
+      }
+      .conteudo > button {
+        margin: 5px 0px;
+      }
+    </style>
+  </body>
+</html>
