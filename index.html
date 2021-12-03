@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - Teste Tag Manager</title>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-N45MV9G");
+    </script>
+    <!-- End Google Tag Manager -->
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-N45MV9G"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <section id="bemvindo">
+      <h1 style="color: blue">Bem-vindo ao treinamento!</h1>
+    </section>
+    <section id="principal" style="display: flex">
+      <div class="conteudo">
+        <h2>Toy Story</h2>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/pt/a/a7/Toy_Story_1995.jpg"
+        />
+        <button
+          onclick="dataLayer.push({'event': 'filme-clique', 'filme': 'Toy Story'});"
+        >
+          Ver filme
+        </button>
+      </div>
+      <div class="conteudo">
+        <h2>Star Wars</h2>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/pt/3/30/Star_Wars_Epis%C3%B3dio_1_Amea%C3%A7a_Fantasma.jpg"
+        />
+        <button
+          onclick="dataLayer.push({'event': 'filme-clique', 'filme': 'Star Wars'});"
+        >
+          Ver filme
+        </button>
+      </div>
+    </section>
+    <style>
+      .conteudo {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+        border: grey 1px solid;
+        border-radius: 10px;
+      }
+      .conteudo > button {
+        margin: 5px 0px;
+      }
+    </style>
+  </body>
+</html>
